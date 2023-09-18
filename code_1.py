@@ -39,7 +39,7 @@ def sign_up():
     st.title("Sign Up")
     new_username = st.text_input("Username")
     
-    uploaded_image = st.file_uploader("Upload your selfie image", type=["jpg", "jpeg", "png"])
+    uploaded_image = st.camera_input("Take a picture")
 
     # Check if an image was uploaded
     if uploaded_image is not None:
@@ -65,7 +65,7 @@ def sign_in():
     st.title("Sign In")
     username = st.text_input("Username")
 
-    uploaded_image = st.file_uploader("Upload your selfie image", type=["jpg", "jpeg", "png"])
+    uploaded_image = st.camera_input("Take a picture")
 
     # Check if an image was uploaded
     if uploaded_image is not None:
